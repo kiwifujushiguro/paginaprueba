@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Asesoría de Eventos Personalizados</title>
+    <link rel="stylesheet" href="estilos.css">
+    <form id="event-form" action="request.php" method="POST">
+</head>
+<body>
+
+<header>
+    <h1>Asesoría de Eventos Personalizados</h1>
+    <p>Crea el evento de tus sueños con recuerdos únicos</p>
+</header>
+
+<div class="container">
+    <h2>Personaliza tu evento</h2>
+    <form id="event-form">
+        <label for="event-type">Tipo de evento:</label>
+        <select id="event-type" name="eventType">
+            <option value="boda">Boda</option>
+            <option value="cumpleaños">Cumpleaños</option>
+            <option value="conferencia">Conferencia</option>
+            <option value="baby-shower">Baby Shower</option>
+            <option value="graduación">Graduación</option>
+            <option value="otros">Otros</option>
+        </select>
+
+        <label for="event-theme">Tema del evento (opcional):</label>
+        <input type="text" id="event-theme" name="eventTheme" placeholder="Ej. Clásico, Moderno, Tropical">
+
+        <label for="event-details">Detalles adicionales:</label>
+        <textarea id="event-details" name="eventDetails" rows="4" placeholder="Describe tus necesidades y deseos"></textarea>
+
+        <button type="submit">Enviar solicitud</button>
+    </form>
+</div>
+
+</body>
+</html>
